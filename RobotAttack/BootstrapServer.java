@@ -9,11 +9,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BootstrapServer {
-//	HashMap<String, String> mp = new HashMap<>();
 	Board board;
 
 	public BootstrapServer() {
-		//board = new Board();
 	}
 
 	public Queue<Location> aroundthetarget() {
@@ -66,7 +64,6 @@ public class BootstrapServer {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		//start the UI 
-		//System.out.println("Enter the dimension for the square matrix board eg: l");
 		String dimen="12";
 		server.board = new Board(Integer.parseInt(dimen),Integer.parseInt(dimen));
 		
