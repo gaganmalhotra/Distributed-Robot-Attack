@@ -20,13 +20,7 @@ public class ServerListener extends Thread {
 	HashMap<String, int[]> robottolocation = new HashMap<String, int[]>();
 	Queue<Location> freshens;
 
-	/*public ServerListener(BootstrapServer server) throws IOException {
-		this.server = server;
-		serverSocket = new ServerSocket(Constants.BOOSTRAP_LISTEN);
-		System.out.println("Waiting for Robots to connect to me ...");
-		freshens = server.aroundthetarget();
-	}*/
-	
+
 	// constructor when target location is not passed
 		public ServerListener(BootstrapServer server, Rob ui, int boardLength) throws IOException {
 			this.server = server;
